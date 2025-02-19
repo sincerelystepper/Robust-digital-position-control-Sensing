@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade Control Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .block {
+            padding: 20px;
+            border: 2px solid black;
+            display: inline-block;
+            min-width: 120px;
+            text-align: center;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+        .arrow {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Cascaded Control System</h2>
+    
+    <div class="container">
+        <div class="block">Reference Input</div>
+        <div class="arrow">→</div>
+        <div class="block">Position Controller</div>
+        <div class="arrow">→</div>
+        <div class="block">Speed Controller</div>
+        <div class="arrow">→</div>
+        <div class="block">Servo Motor</div>
+        <div class="arrow">→</div>
+        <div class="block">Feedback Sensor</div>
+        <div class="arrow">↺</div>
+        <div class="block">Back to Position Controller</div>
+    </div>
+
+</body>
+</html>
